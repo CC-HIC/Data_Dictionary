@@ -1,0 +1,224 @@
+nihr_code_name,new_code,clinical_bundle,resource_type,action,detail,short_name,athena_code,icnarc_names,snomed
+NIHR_HIC_ICU_0001,C001,,,keep,,PAS number,4086934,NA,NA
+NIHR_HIC_ICU_0002,,,,keep,,Site code ICNARC CMP number,NA,ICNNO,NA
+NIHR_HIC_ICU_0003,,,,keep,,GP code,44803710,GPCODE,716271000000100
+NIHR_HIC_ICU_0004,,,,keep,split into each HES speciality code,Treatment function code,NA,SCODE,NA
+NIHR_HIC_ICU_0005,,,,keep,,Critical care local identifier ICNARC admission number,NA,ADNO,NA
+NIHR_HIC_ICU_0006,,,,drop,,CCU bed configuration 02,NA,NA,NA
+NIHR_HIC_ICU_0007,,,,drop,superfluous information. Can derive from start and end times and type of unit,Level 2 (HDU) days,NA,CCL2D,NA
+NIHR_HIC_ICU_0008,,,,drop,superfluous information. Can derive from start and end times and type of unit,Level 3 (ICU) days,NA,CCL3D,NA
+NIHR_HIC_ICU_0009,,,,drop,,Organ support maximum,NA,TOTOS,NA
+NIHR_HIC_ICU_0010,,,,merge,merge into elements of past medical history,Acute myeloid/lymphocytic leukaemia or myeloma,140352,AMLALLMM,91861009
+NIHR_HIC_ICU_0011,,,,,,Admission for pre-surgical preparation,4046549,PSP,133898004
+NIHR_HIC_ICU_0013,,,,drop,,Adult ICU/HDU within your critical care transfer group (in),NA,TGA,NA
+NIHR_HIC_ICU_0015,,,,drop,can be determined from the antibiotic data,Antimicrobial use after 48 hours in your unit,NA,AMUAI,NA
+NIHR_HIC_ICU_0016,,,,merge,,Biopsy proven cirrhosis,NA,BPC,NA
+NIHR_HIC_ICU_0017,,,,keep,,Height,3023540,HCM,50373000
+NIHR_HIC_ICU_0018,,,,modify,"change from binary 0, 1 to the estimated height",Height (Source),3035463,HCMEST,50373000
+NIHR_HIC_ICU_0019,,,,keep,,Weight,3013762,WKG,27113001
+NIHR_HIC_ICU_0020,,,,modify,"change from binary 0, 1 to the estimated weight",Weight (Source),3026600,WKGEST,27113001
+NIHR_HIC_ICU_0022,,,,drop,,Basic Cardiovascular support days,NA,BCSD,NA
+NIHR_HIC_ICU_0023,,,,drop,,Advanced Cardiovascular support days,NA,ACSD,NA
+NIHR_HIC_ICU_0024,,,,merge,,Chemotherapy (within the last 6months) steroids alone excluded,4059352,CHEMOX,161653008
+NIHR_HIC_ICU_0025,,,,merge,,Chronic myelogenous /lymphocytic leukaemia,NA,CMLCLL,2818009
+NIHR_HIC_ICU_0026,,,,merge,,Chronic renal replacement therapy,4019967,CRRX,105502003
+NIHR_HIC_ICU_0029,,,,merge,,Congenital immunohumoral or cellular immune deficiency state,NA,CICIDS,NA
+NIHR_HIC_ICU_0032,,,,modfiy,date of admissions to hospital (i.e admitted past A&E),Date of admission to your hospital,3023170,DAH,399423000
+NIHR_HIC_ICU_0033,,,,keep,,Date of birth,4083587,DOB,184099003
+NIHR_HIC_ICU_0034,,,,drop,,Date of last critical care visit prior to this admission to your unit,NA,DLCCA,NA
+NIHR_HIC_ICU_0035,,,,drop,,Date of original admission to/attendance at acute hospital,NA,DOAH,NA
+NIHR_HIC_ICU_0036,,,,drop,,Date of original admission to ICU/HDU,NA,DOAICU,NA
+NIHR_HIC_ICU_0037,,,,drop,,Date of ultimate discharge from ICU/HDU,NA,DUDICU,NA
+NIHR_HIC_ICU_0038,,,,merge,combine into datetime,Date body removed from your unit,NA,DBRICU,NA
+NIHR_HIC_ICU_0039,,,,merge,combine into datetime,Time body removed from your unit,NA,TBRICU,NA
+NIHR_HIC_ICU_0042,,,,merge,combine into datetime,Date of death on yout unit,21494750,DOD,399753006
+NIHR_HIC_ICU_0043,,,,merge,combine into datetime,Time of death on your unit,21494751,TOD,398299004
+NIHR_HIC_ICU_0044,,,,merge,combine into datetime,Date of declaration of brain stem death,4105099,DDBSD,281423001
+NIHR_HIC_ICU_0045,,,,merge,combine into datetime,Time of declaration of brain stem death,4105099,TDBSD,281423001
+NIHR_HIC_ICU_0048,,,,merge,combine into datetime,Date treatment first withdrawn,NA,DTW,NA
+NIHR_HIC_ICU_0049,,,,merge,combine into datetime,Time treatment first withdrawn,NA,TTW,NA
+NIHR_HIC_ICU_0050,,,,merge,combine into datetime,Date fully ready for discharge,4247392,DWFRD,406210007
+NIHR_HIC_ICU_0051,,,,merge,combine into datetime,Time fully ready for discharge,4247392,TWFRD,406210007
+NIHR_HIC_ICU_0054,,,,,,Delay,NA,DHRS,NA
+NIHR_HIC_ICU_0056,,,,drop,,Dermatological support days,NA,DSD,NA
+NIHR_HIC_ICU_0059,,,,drop,,Gastrointestinal support days,NA,GSD,NA
+NIHR_HIC_ICU_0060,,,,merge,,Heaptic encephalopathy,4029488,HE,13920009
+NIHR_HIC_ICU_0062,,,,merge,,HIV/AIDS,4267414,AIDS_V3,62479008
+NIHR_HIC_ICU_0063,,,,merge,,Home ventilation,46273524,HV,60631000119109
+NIHR_HIC_ICU_0067,,,,drop,,Liver support days,NA,LSD,NA
+NIHR_HIC_ICU_0070,,,,merge,,Lymphoma,4177700,LYM,429014004
+NIHR_HIC_ICU_0071,,,,merge,,Metastatic disease,NA,META,NA
+NIHR_HIC_ICU_0072,,,,drop,,Neurological support days,NA,NSD,NA
+NIHR_HIC_ICU_0073,,,,keep,,NHS number,44794716,NHSNO,395451000000101
+NIHR_HIC_ICU_0074,,,,merge,,Other condition in past medical history,NA,OCPMH,NA
+NIHR_HIC_ICU_0075,,,,merge,,Portal hypertension,46270558,PH,59701000119109
+NIHR_HIC_ICU_0076,,,,keep,,Postcode,4083591,PCODE,184102003
+NIHR_HIC_ICU_0080,,,,merge,,Radiotherapy,4323886,RADIOX,429479009
+NIHR_HIC_ICU_0082,,,,keep,,Referred for solid organ or tissue donation,44802438,REFOD,NA
+NIHR_HIC_ICU_0083,,,,drop,,Renal support days,NA,RSD,NA
+NIHR_HIC_ICU_0086,,,,drop,,Basic respiratory support days,NA,BRSD,NA
+NIHR_HIC_ICU_0087,,,,drop,,Advanced respiratory support days,NA,ARSD,NA
+NIHR_HIC_ICU_0088,,,,merge,,Secondary reasons for admission to your unit,44803021,RAICU2,507161000000104
+NIHR_HIC_ICU_0092,,,,drop,,Severe respiratory disease,NA,SRD,NA
+NIHR_HIC_ICU_0099,,,,keep,,Steroid treatment,NA,STERX,NA
+NIHR_HIC_ICU_0100,,,,drop,,Transferring unit admission number,NA,TUADNO,NA
+NIHR_HIC_ICU_0101,,,,drop,,Transferring unit identifier (in),NA,TUIDI,NA
+NIHR_HIC_ICU_0107,,,,drop,,Very severe cardiovascular disease,NA,VSCD,NA
+NIHR_HIC_ICU_0108,,,,keep,,Heart rate,3027018,HHR,364075005
+NIHR_HIC_ICU_0110,,,,keep,,Mean arterial blood pressure - Art BPMean arterial blood pressure,4108290,NA,251075007
+NIHR_HIC_ICU_0111,,,,keep,,Mean arterial blood pressure - NBPMean arterial blood pressure,,NA,251074006
+NIHR_HIC_ICU_0112,,,,keep,,Systolic Arterial blood pressure - Art BPSystolic Arterial blood pressure,,LSYS,251071003
+NIHR_HIC_ICU_0113,,,,keep,,Systolic Arterial blood pressure - NBPSystolic Arterial blood pressure,,LSYS,251070002
+NIHR_HIC_ICU_0114,,,,keep,,Diastolic arterial blood pressure - Art BPDiastolic arterial blood pressure,,PDAIH,251073000
+NIHR_HIC_ICU_0115,,,,keep,,Diastolic arterial blood pressure - NBPDiastolic arterial blood pressure,,PDAIH,174255007
+NIHR_HIC_ICU_0116,,,,keep,,Central venous pressure,21490675,NA,71420008
+NIHR_HIC_ICU_0117,,,,merge,"merge all cardiac outputs, provide a relationship fact to detail which method of measure",Cardiac output - LiDCO Plus,4221102,NA,82799009
+NIHR_HIC_ICU_0118,,,,merge,"merge all cardiac outputs, provide a relationship fact to detail which method of measure",Cardiac output - LiDCO Rapid,4221102,NA,82799009
+NIHR_HIC_ICU_0119,,,,merge,"merge all cardiac outputs, provide a relationship fact to detail which method of measure",Cardiac output - PICCO,4221102,NA,82799009
+NIHR_HIC_ICU_0120,,,,merge,"merge all cardiac outputs, provide a relationship fact to detail which method of measure",Cardiac output - PA Catheter,3003487,NA,82799009
+NIHR_HIC_ICU_0121,,,,merge,"merge all cardiac outputs, provide a relationship fact to detail which method of measure",Cardiac output - Doppler,3004582,NA,82799009
+NIHR_HIC_ICU_0122,,,,merge,"merge all blood measures, provide a relationship fact to denote source",Lactate - ABG,3047181,HBL,1014591000000106
+NIHR_HIC_ICU_0123,,,,merge,"merge all blood measures, provide a relationship fact to denote source",Lactate - Lab,3047181,HBL,1014591000000106
+NIHR_HIC_ICU_0125,,,,keep,,Central venous saturation,37017020,NA,713194001
+NIHR_HIC_ICU_0129,,,,keep,,SpO2,40762499,NA,103228002
+NIHR_HIC_ICU_0130,,,,merge,"SxO2, with metadata to represent source",SxO2 - ABG / VBG,3013502,NA,442476006
+NIHR_HIC_ICU_0132,,,,merge,"PxO2, with metadata to represent source",PxO2 - ABG / VBG,3027801,ILPO,NA
+NIHR_HIC_ICU_0134,,,,merge,"PxCO2, with metadata to represent source",PxCO2 - ABG / VBG,3027946,PCLPH_V3,NA
+NIHR_HIC_ICU_0136,,,,merge,"pH, with metadata to represent source",pH - ABG / VBG,3010421,LPH_V3,1007061000000103
+NIHR_HIC_ICU_0138,,,,merge,"HCO3, with metadata to represent source",HCO3 - ABG / VBG,3016293,HHCO,1012701000000104
+NIHR_HIC_ICU_0141,,,,merge,,Temperature - Central,3025926,HCTEMP,276885007
+NIHR_HIC_ICU_0142,,,,merge,,Temperature - Non-central,3025085,HNCTEMP,431807005
+NIHR_HIC_ICU_0145,,,,merge,"all respiratory rates merged, with metadata to represent source",Total respiratory rate (monitor),3024171,NA,86290005
+NIHR_HIC_ICU_0146,,,,merge,"all respiratory rates merged, with metadata to represent source",Total respiratory rate (ventilator),3007646,HVRR,250876000
+NIHR_HIC_ICU_0147,,,,merge,"all respiratory rates merged, with metadata to represent source",Mandatory Respiratory Rate,3006306,NA,250877009
+NIHR_HIC_ICU_0148,,,,keep,,Minute volume,3045410,NA,250811004
+NIHR_HIC_ICU_0149,,,,keep,,Peak airway pressure,36306157,NA,NA
+NIHR_HIC_ICU_0150,,,,keep,,Inspired fraction of oxygen,3020716,FILPO,250774007
+NIHR_HIC_ICU_0151,,,,keep,,Positive End Expiratory Pressure,3022875,NA,250854009
+NIHR_HIC_ICU_0152,,,,modify,clarify exactly what airway pressure this is,Airway pressure,4108457,NA,250852008
+NIHR_HIC_ICU_0153,,,,modify,clarify which frequency this is,Frequency (Hz),NA,NA,NA
+NIHR_HIC_ICU_0154,,,,,clarify,Cycle Volume,42528512,NA,NA
+NIHR_HIC_ICU_0155,,,,keep,,Base flow,NA,NA,NA
+NIHR_HIC_ICU_0156,,,,keep,,GCS - total,3007194,LTOT,24824100202
+NIHR_HIC_ICU_0157,,,,keep,,GCS - motor component,3008223,MOTL,281396004
+NIHR_HIC_ICU_0158,,,,keep,,GCS - eye component,3016335,EYEL,281395000
+NIHR_HIC_ICU_0159,,,,keep,,GCS - verbal component,3009094,VERL,281397008
+NIHR_HIC_ICU_0162,,,,modify,"currently has urine output hourly, but need to be able to represent any time interval",Urine output,3014835,NA,426543000
+NIHR_HIC_ICU_0164,,,,keep,,Urea,3020779,HU,1028281000000106
+NIHR_HIC_ICU_0166,,,,keep,,Creatinine,3020564,HCREAT,1032061000000108
+NIHR_HIC_ICU_0168,,,,merge,merge sodiums,Sodium,46235784,HNA,1012681000000101
+NIHR_HIC_ICU_0169,,,,merge,merge sodiums,Sodium ABG/VBG,46235784,HNA,1012681000000101
+NIHR_HIC_ICU_0171,,,,merge,merge K,Potassium,46235078,HK,1012671000000103
+NIHR_HIC_ICU_0172,,,,merge,merge K,Potassium ABG/VBG,46235078,HK,1012671000000103
+NIHR_HIC_ICU_0174,,,,keep,,Bilirubin,40757494,NA,1026761000000106
+NIHR_HIC_ICU_0175,,,,merge,,Glucose ABG/VBG,3013826,HG,997671000000106
+NIHR_HIC_ICU_0176,,,,merge,,Glucose bedside test,3001501,NA,997671000000106
+NIHR_HIC_ICU_0178,,,,merge,,Haemoglobin ABG/VBG,3000963,HHB,416125006
+NIHR_HIC_ICU_0179,,,,merge,,Haemoglobin,3000963,HHB,416125006
+NIHR_HIC_ICU_0182,,,,keep,,White cell count,3010813,HWBC,1022541000000102
+NIHR_HIC_ICU_0183,,,,keep,,Neutrophil count,3017732,ANCLWBC,1022551000000104
+NIHR_HIC_ICU_0184,,,,keep,,Platelets,3007461,HPC,1022651000000100
+NIHR_HIC_ICU_0187,,,,drop,micro to be represented in a completely different way,Organism,4269718,NA,NA
+NIHR_HIC_ICU_0242,,,,keep,,fentanyl,1154029,NA,40648001
+NIHR_HIC_ICU_0252,,,,keep,,milrinone,1368671,NA,108480007
+NIHR_HIC_ICU_0395,,,,drop,,CCU bed configuration 03,NA,NA,NA
+NIHR_HIC_ICU_0396,,,,drop,,CCU bed configuration 05,NA,NA,NA
+NIHR_HIC_ICU_0397,,,,drop,,CCU bed configuration 90,NA,NA,NA
+NIHR_HIC_ICU_0399,,,,modify,"change to diagnostic codes associated with the episode. Can be given as: SNOMED, ICD-10, or ICNARC. With a flag for one that carries a ""primary"" diagnostic trait. Otherwise, these are fields that are all secondary diagnoseses, or past medical history.",Primary reason for admission to your unit,44803020,RAICU1,507151000000102
+NIHR_HIC_ICU_0400,,,,modify,Should this have a date time stamp,Brain stem death declared,4105099,BSDTP,281423001
+NIHR_HIC_ICU_0406,,,,modify,add option to include time,Date of discharge from your hospital,3021690,DDH,442864001
+NIHR_HIC_ICU_0407,,,,drop,,Date of first critical care post-discharge from your unit,NA,DFCCD,NA
+NIHR_HIC_ICU_0408,,,,drop,,Date of ultimate discharge from your hospital,NA,DUDH,NA
+NIHR_HIC_ICU_0409,,,,keep,,APACHE II Score,35610218,NA,1090651000000107
+NIHR_HIC_ICU_0410,,,,keep,,APACHE II Probability,NA,NA,NA
+NIHR_HIC_ICU_0411,,,,keep,,Date & Time of admission to your unit,4161014,DAICU,399423000
+NIHR_HIC_ICU_0412,,,,keep,,Date & Time of discharge from your unit,40485383,DDICU,442864001
+NIHR_HIC_ICU_0413,,,,modify,"need to allow for multiple different ways to give fluid balance. For example, 24 hour balance is often sufficient",Fluid Balance (hourly),3002137,NA,251856003
+NIHR_HIC_ICU_0414,,,,keep,,amikacin,1790868,NA,48836000
+NIHR_HIC_ICU_0415,,,,keep,,amoxicillin,1713332,NA,27658006
+NIHR_HIC_ICU_0416,,,,keep,,azithromycin,1734104,NA,96034006
+NIHR_HIC_ICU_0417,,,,keep,,benzylpenicillin,NA,NA,78507004
+NIHR_HIC_ICU_0418,,,,keep,,cefotaxime,1774470,NA,3334000
+NIHR_HIC_ICU_0419,,,,keep,,ceftazidime,1776684,NA,36893000
+NIHR_HIC_ICU_0420,,,,keep,,ceftriaxone,1777806,NA,19841008
+NIHR_HIC_ICU_0421,,,,keep,,cefuroxime,1778162,NA,73986003
+NIHR_HIC_ICU_0422,,,,keep,,chloramphenicol,990069,NA,57191001
+NIHR_HIC_ICU_0423,,,,keep,,ciprofloxacin,1797513,NA,7577004
+NIHR_HIC_ICU_0424,,,,keep,,clarithromycin,1750500,NA,83999008
+NIHR_HIC_ICU_0425,,,,keep,,clindamycin,997881,NA,58883005
+NIHR_HIC_ICU_0426,,,,keep,,co-amoxiclav,NA,NA,89519005
+NIHR_HIC_ICU_0427,,,,keep,,colistin,901845,NA,73074003
+NIHR_HIC_ICU_0428,,,,keep,,co-trimoxazole,NA,NA,NA
+NIHR_HIC_ICU_0429,,,,keep,,demeclocycline hcl,NA,NA,5737008
+NIHR_HIC_ICU_0430,,,,keep,,doxycycline,1738521,NA,10504007
+NIHR_HIC_ICU_0432,,,,keep,,ertapenem,1717963,NA,385574002
+NIHR_HIC_ICU_0433,,,,keep,,erythromycin,1746940,NA,30427009
+NIHR_HIC_ICU_0434,,,,keep,,ethambutal hcl,NA,NA,24450004
+NIHR_HIC_ICU_0435,,,,keep,,flucloxacillin,NA,NA,96067005
+NIHR_HIC_ICU_0436,,,,keep,,fuscidic acid,NA,NA,NA
+NIHR_HIC_ICU_0437,,,,keep,,gentamicin,45892419,NA,57752001
+NIHR_HIC_ICU_0438,,,,keep,,isoniazid,1782521,NA,81335000
+NIHR_HIC_ICU_0439,,,,keep,,levofloxacin,1742253,NA,96087006
+NIHR_HIC_ICU_0440,,,,keep,,linezolid,1736887,NA,125695009
+NIHR_HIC_ICU_0441,,,,keep,,meropenem,1709170,NA,96062004
+NIHR_HIC_ICU_0442,,,,keep,,metronidazole,1707164,NA,1222004
+NIHR_HIC_ICU_0443,,,,keep,,moxifloxacin,1716903,NA,371296007
+NIHR_HIC_ICU_0444,,,,keep,,neomycin,915981,NA,73093001
+NIHR_HIC_ICU_0445,,,,keep,,nitrofurantion,NA,NA,NA
+NIHR_HIC_ICU_0446,,,,keep,,ofloxacin,923081,NA,96086002
+NIHR_HIC_ICU_0447,,,,keep,,pentamidine,1730370,NA,31692006
+NIHR_HIC_ICU_0448,,,,keep,,phenoxymethylpenicillin,NA,NA,39359008
+NIHR_HIC_ICU_0449,,,,keep,,piperacillin/tazobactam,NA,NA,74575000
+NIHR_HIC_ICU_0450,,,,keep,,pyrazinamide,1759455,NA,13592004
+NIHR_HIC_ICU_0452,,,,keep,,rifampacin,NA,NA,NA
+NIHR_HIC_ICU_0453,,,,keep,,rifater,NA,NA,NA
+NIHR_HIC_ICU_0454,,,,keep,,rifinah,NA,NA,NA
+NIHR_HIC_ICU_0456,,,,keep,,sodium fusidate,NA,NA,324312006
+NIHR_HIC_ICU_0457,,,,keep,,teicoplanin,19078399,NA,96014005
+NIHR_HIC_ICU_0458,,,,keep,,tigecycline,1742432,NA,418631002
+NIHR_HIC_ICU_0459,,,,keep,,tobramycin,902722,NA,89695009
+NIHR_HIC_ICU_0460,,,,keep,,trimethoprim,1705674,NA,32792001
+NIHR_HIC_ICU_0461,,,,keep,,vancomycin,1707687,NA,42082003
+NIHR_HIC_ICU_0462,,,,keep,,propofol,753626,NA,74674007
+NIHR_HIC_ICU_0463,,,,keep,,midazolam,708298,NA,26800000
+NIHR_HIC_ICU_0464,,,,keep,,remifentanil,19016749,NA,108379008
+NIHR_HIC_ICU_0465,,,,keep,,adrenaline,NA,NA,65502005
+NIHR_HIC_ICU_0466,,,,keep,,dobutamine,1337720,NA,26523005
+NIHR_HIC_ICU_0467,,,,keep,,dopamine,1337860,NA,59187003
+NIHR_HIC_ICU_0468,,,,keep,,enoximone,19063454,NA,320067009
+NIHR_HIC_ICU_0469,,,,keep,,levosimendan,40173184,NA,442790008
+NIHR_HIC_ICU_0470,,,,keep,,noradrenaline,NA,NA,111130009
+NIHR_HIC_ICU_0471,,,,keep,,vasopressin,NA,NA,71338005
+NIHR_HIC_ICU_0549,,respiratory,,,,Spontaneous Respiratory Rate,4154772,HNVRR,271625008
+NIHR_HIC_ICU_0550,,renal,,,,Tidal volume,3012410,NA,13621006
+NIHR_HIC_ICU_0552,,renal,,drop,is this not self evident from when on RRT?,Duration of RRT,NA,NA,NA
+NIHR_HIC_ICU_0553,,renal,,modify,per day / per hour / open the units to be customizable,Total effluent per day,NA,NA,NA
+NIHR_HIC_ICU_0554,,renal,,keep,,Dialysate,NA,NA,NA
+NIHR_HIC_ICU_0555,,renal,,,,Replacement fluid during RRT,NA,NA,NA
+NIHR_HIC_ICU_0557,,,,keep,,C reactive protein,3020460,NA,999651000000107
+NIHR_HIC_ICU_0558,,,,keep,,thiopentone / thiopental,NA,NA,78411008
+NIHR_HIC_ICU_0559,,,,keep,,clonidine,1398937,NA,62782004
+NIHR_HIC_ICU_0560,,,,keep,,dexmedetomidine,19061088,NA,438079000
+NIHR_HIC_ICU_0561,,,,keep,,ketamine,785649,NA,333847008
+NIHR_HIC_ICU_0563,,,,keep,,morphine,1110410,NA,73572009
+NIHR_HIC_ICU_0564,,,,keep,,dopexamine,19056154,NA,349922000
+NIHR_HIC_ICU_0565,,,,keep,,terlipressin,19119253,NA,325927008
+NIHR_HIC_ICU_0906,,,,keep,,esmolol,19063575,NA,77856005
+NIHR_HIC_ICU_0907,,,,keep,,metoprolol,1307046,NA,7092007
+NIHR_HIC_ICU_0908,,,,keep,,dexamethasone,1518254,NA,7561000
+NIHR_HIC_ICU_0909,,,,keep,,hydrocortisone,975125,NA,16602005
+NIHR_HIC_ICU_0910,,,,keep,,methylprednisolone,1506270,NA,27242001
+NIHR_HIC_ICU_0911,,,,?drop,is this going to be a reliable marker for all EHR?,Sedation yes/no,45885222,SEDPAR,17971005
+NIHR_HIC_ICU_0912,,,,drop,,Ultimate primary reason for admission to unit,44810203,URAICU,886861000000108
+NIHR_HIC_ICU_0913,,,,modify,,PaO2/FiO2 ratio,NA,NA,NA
+NIHR_HIC_ICU_0915,,,,modify,Needs review as different units report fluid balance in different ways.,Fluid Balance (daily),3038018,NA,251856003
+NIHR_HIC_ICU_0918,,,,modify,remove notion of labority origin,Glucose (laboratory),3013826,HG,997671000000106
+NIHR_HIC_ICU_0931,,,,drop,,Advanced respiratory support,NA,NA,NA
+NIHR_HIC_ICU_0932,,,,drop,,Basic respiratory support,NA,NA,NA
+NIHR_HIC_ICU_0933,,,,drop,,Advanced Cardiovascular support,NA,NA,NA
+NIHR_HIC_ICU_0934,,,,drop,,Basic Cardiovascular support,NA,NA,NA
+NIHR_HIC_ICU_0935,,,,drop,,Renal support,NA,NA,NA
+NIHR_HIC_ICU_0936,,,,drop,,Neurological support,NA,NA,NA
+NIHR_HIC_ICU_0937,,,,drop,,Liver support,NA,NA,NA
+NIHR_HIC_ICU_0938,,,,drop,,Dermatological support,NA,NA,NA
+NIHR_HIC_ICU_0939,,,,drop,,Gastrointestinal support,NA,NA,NA
