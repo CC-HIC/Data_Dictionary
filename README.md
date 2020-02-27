@@ -15,13 +15,6 @@ It is a major limitation of the current iteration of HIC, that missingness is pr
 
 ## To do:
 
-Ed:
-Push this repo
-Share synthetic/dummy "core" flat file so Aasiyah and Claire can spin an OMOP db to work from.
-Alter muncher to keep things in memor
-01-import-core.r
-start -> 02-cvs-bundle.r
-
 Aasiyah:
 Double check all fields have an athena code
 Assign "new HIC codes" that respect the "keep", "drop", "merge" principle
