@@ -1,0 +1,4 @@
+person_id,death_date,death_datetime,death_type_concept_id,cause_concept_id,cause_source_value,cause_source_concept_id
+1,2030-01-24,2030-01-24T21:25:00Z,32510,NA,NA,NA
+12,2031-06-30,2031-06-30T04:30:00Z,32510,NA,NA,NA
+13,2031-08-02,2031-08-02T12:25:00Z,32510,NA,NA,NA

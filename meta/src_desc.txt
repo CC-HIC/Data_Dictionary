@@ -1,0 +1,12 @@
+This is the demo source description file.
+Please use this as a template and replace with information from your own trust
+
+What is your hospital?
+How many ICUs?
+What are their labels?
+Capacity?
+Casemix?
+What are the data sources for the ETL?
+
+Any other information you wish to convey for provenance
+

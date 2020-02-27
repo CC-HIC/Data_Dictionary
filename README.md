@@ -2,7 +2,7 @@
 
 This is a comprehensive data specification for CC-HIC designed to facilitate the ETL to OMOP (OHDSI CDM). We follow the same conventions as detailed on the OHDSI Common Data Model wiki.
 
-The founding axioms to follow when performing your ETL are:
+The founding axioms apply when performing your ETL:
 - If something happens, we must know about it and have a record.
 - If there is no record, it must follow that nothing happened.
 
@@ -16,7 +16,6 @@ It is a major limitation of the current iteration of HIC, that missingness is pr
 ## To do:
 
 Ed:
-Upload mappings file
 Push this repo
 Share synthetic/dummy "core" flat file so Aasiyah and Claire can spin an OMOP db to work from.
 Alter muncher to keep things in memor
