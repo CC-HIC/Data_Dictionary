@@ -13,7 +13,7 @@ cdm <- omopify_xml(".",
 # Write out the tables
 purrr::iwalk(
   cdm,
-  ~ readr::write_csv(.x, paste0("outputs/", .y, ".csv"))
+  ~ readr::write_csv(.x, paste0("synthetic_omop/", .y, ".csv"))
 )
 
 # Boom. And we're out.
